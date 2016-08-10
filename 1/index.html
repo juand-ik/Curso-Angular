@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="primera">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width-device-width">
+		
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+
+		<script type="text/javascript" src="libs/angular/angular.min.js"></script>
+		<script type="text/javascript" src="libs/jQuery/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h1> {{ "Plantilla inicial con Angular " + (1+0) | uppercase }} </h1>
+		<!--Ocultando errores -->
+		<div class="container">
+			<h1 ng-bind=" 'Resultado:'  + (1+1) " ng-cloak class="ng-cloak">cargando...</h1><!--Permite ocultar elementos, por ejemplo plantillas, esto hasta que Angular este inicializado correctamente -->
+		</div>
+		<script type="text/javascript">
+			var app = angular.module( "primera", [] );/* [] --> Permite expandir */
+		</script>
+	</body>
+</html>
