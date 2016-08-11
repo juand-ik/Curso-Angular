@@ -1,0 +1,3 @@
+Segunda parte del curso.
+
+Se muestra como crear una app de una sola página en AngularJS
